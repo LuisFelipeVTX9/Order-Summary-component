@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: Red Hat Display, sans-serif;
+}
+body{
+	background-image: url(images/pattern.png);
+	background-repeat: no-repeat;
+	background-color: hsl(225, 100%, 94%);
+}
+main{
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.card{
+	max-width: 450px;
+	background-color: #fff;
+	overflow: hidden;
+	border-radius: 15px;
+	box-shadow: 0px 26px 22px 0 rgba(0,0,0,0.090);
+}
+.img-card picture img{
+	object-fit: cover;
+}
+.text-card{
+	padding: 40px 50px;
+	background-color: #fff;
+}
+.card-header{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.card-header h1{
+	color: hsl(223, 47%, 23%);
+	font-size: 26px;
+	font-weight: 900;
+}
+.card-header p{
+	margin-top: 1rem;
+	color: hsl(224, 23%, 55%);
+	text-align: center;
+	font-size: 1rem;
+	font-weight: 500;
+	line-height: 1.5;
+}
+.music-plan{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 1.2rem;
+	padding: 15px 20px;
+	border-radius: 10px;
+	background-color: hsl(225, 100%, 98%);
+
+}
+.plan-details{
+	display: flex;
+	align-items: center;
+}
+.plan-prices{
+	margin-left: 15px;
+}
+.plan-prices h2{
+	color: hsl(223, 47%, 23%);
+	font-size: 1rem;
+	font-weight: 900;
+}
+.plan-prices p{
+	color: hsl(224, 23%, 55%);
+	font-size: 1rem;
+	margin-top: 0.2rem;
+}
+.change a{
+	color: hsl(245,75%,52%);
+	font-size: 14px;
+	font-weight: 900;
+}
+.change a:hover{
+	color: hsl(245, 75%, 65%);
+	transition: .3s;
+}
+button{
+	width: 100%;
+	padding: 0.9rem 0;
+	font-weight: bold;
+	border: none;
+	background-color: hsl(245, 75%, 52%);
+	color: #fff;
+	border-radius: 10px;
+	margin-top: 1.5rem;
+	cursor: pointer;
+	font-weight: 700;
+	font-size: 14px;
+	box-shadow: 0px 9px 17px -5px rgba(0,0,0,0.3);
+}
+button:hover{
+	background-color: hsl(245, 75%, 65%);
+	transition: .3s;
+}
+.cancel{
+	margin-top: 1rem;
+	text-align: center;
+}
+.cancel-order{
+	font-size: 14px;
+	color: hsl(224, 23%, 55%);
+	text-decoration: none;
+	font-weight: 900;
+}
+.cancel-order:hover{
+	color: hsl(223, 47%, 23%);
+	transition: .3s;
+}
+
+/*Medias Queries*/
+@media(max-width: 760px){
+	.card{
+		width: 400px;
+	}
+	.img-card picture img{
+		width: 400px;
+		object-fit: cover;
+	}
+	.card-header h1{
+		font-size: 24px;
+	}
+	.card-header p{
+		font-size: 14px;
+	}
+	.plan-prices{
+		margin-left: 12px;
+	}
+	.plan-prices h2{
+		font-size: 14px;
+	}
+	.plan-prices p{
+		font-size: 14px;
+	}
+	.change a{
+		font-size: 13px;
+	}
+	button{
+		padding: 0.8rem 0;
+		font-size: 13px;
+	}
+	.cancel-order{
+		font-size: 13px;
+	}
+}
+
+@media(max-width: 500px){
+	.card{
+		width: 350px;
+	}
+	.text-card{
+		padding: 30px 40px;
+	}
+	.img-card picture img{
+		width: 350px;
+	}
+	.card-header h1{
+		font-size: 22px;
+	}
+	.card-header p{
+		font-size: 12px;
+	}
+	.plan-prices{
+		margin-left: 12px;
+	}
+	.plan-prices h2{
+		font-size: 13px;
+	}
+	.plan-prices p{
+		font-size: 13px;
+	}
+	.plan-details .icon-music img{
+		width: 40px; height: 40px; object-fit: cover;
+	}
+	.change a{
+		font-size: 12px;
+	}
+	button{
+		padding: 0.8rem 0;
+		font-size: 12px;
+	}
+	.cancel-order{
+		font-size: 12px;
+	}
+
+
+	@media(max-width: 375px){
+	body{
+		background-image: url(images/pattern-background-mobile.svg);
+	}
+	.card{
+		width: 300px;
+	}
+	.text-card{
+		padding: 20px 30px;
+	}
+	.img-card picture img{
+		width: 300px;
+	}
+	.card-header h1{
+		font-size: 20px;
+	}
+	.card-header p{
+		font-size: 11px;
+	}
+	.plan-prices{
+		margin-left: 12px;
+	}
+	.plan-prices h2{
+		font-size: 11px;
+	}
+	.plan-prices p{
+		font-size: 11px;
+	}
+	.plan-details .icon-music img{
+		width: 35px; height: 35px; object-fit: cover;
+	}
+	.change a{
+		font-size: 11px;
+	}
+	button{
+		padding: 0.8rem 0;
+		font-size: 11px;
+	}
+	.cancel-order{
+		font-size: 11px;
+	}
+}
